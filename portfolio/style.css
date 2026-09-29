@@ -1,31 +1,60 @@
-#cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 40px;
-    background-color: #FAF7F2;
-    text-align: center;
+/* ===== Cores do site ===== */
+:root {
+  --verde: #3F6C51;
+  --terracota: #D97757;
+  --texto: #2B2A28;
+  --texto-secundario: #5B564C;
+  --fundo-bege: #FAF7F2;
+  --borda: #EDE3D3;
 }
 
+/* ===== Básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background-color: var(--fundo-bege);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== Menu ===== */
+.navbar {
+  border-bottom: 1px solid var(--borda);
+}
+
+.navbar-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
 
 .logo {
-    color: #2B2A28;
-    font-family: Roboto, sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
+  font-weight: bold;
 }
 
 .menu {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  font-size: 14px;
 }
 
-.menu-link {
-    color: #5B564C;
-    text-decoration: none;
-    font-family: Roboto, sans-serif;
-    font-size: 1.25rem;
-    transition: color 0.3s ease;
-
+.menu a:hover {
+  color: var(--verde);
 }
