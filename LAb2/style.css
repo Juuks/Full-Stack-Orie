@@ -1,0 +1,161 @@
+/* ===== Seletores de TAG ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #2d3142;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: #3a3f9e;
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background-color: #3a3f9e;
+    color: #ffffff;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+/* ===== Seletores de ID ===== */
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: linear-gradient(90deg, #3a3f9e, #6c63ff);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#rodape {
+    margin-top: auto;
+    text-align: center;
+    padding: 18px;
+    background-color: #2d3142;
+    color: #c7cad9;
+    font-size: 0.9rem;
+}
+
+#rodape p {
+    margin: 0;
+}
+
+#tabela-projetos th:first-child {
+    width: 50%;
+}
+
+/* ===== Seletores de CLASSE ===== */
+.logo {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ativo {
+    background-color: #ffffff;
+    color: #3a3f9e;
+    font-weight: bold;
+}
+
+.conteudo {
+    max-width: 900px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.destaque {
+    font-size: 1.15rem;
+    color: #5a5f7a;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 26px;
+    background-color: #6c63ff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* ===== PSEUDO-CLASSES ===== */
+.menu-link:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.ativo:hover {
+    background-color: #e8e7ff;
+    color: #3a3f9e;
+}
+
+.botao:hover {
+    background-color: #3a3f9e;
+    transform: translateY(-2px);
+}
+
+.botao:active {
+    transform: translateY(0);
+}
+
+tr:nth-child(even) {
+    background-color: #f7f8fc;
+}
+
+tr:hover td {
+    background-color: #ecebff;
+}
+
+a:focus {
+    outline: 2px dashed #ffcc00;
+    outline-offset: 3px;
+}
